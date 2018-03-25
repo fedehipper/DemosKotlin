@@ -2,13 +2,12 @@ package com.demo.kotlin.domain
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
 import javax.persistence.Id
 
 @Entity
 class Persona(
         @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        @GeneratedValue
         var id: Long,
         var nombre: String,
         var apellido: String,
