@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 @Service
 class PersonaService(val personaRepository: PersonaRepository) {
 
-    fun buscarTodas(): List<Persona> = personaRepository.findAll()
+    fun buscarTodas() = personaRepository.findAll()
 
 }
 
